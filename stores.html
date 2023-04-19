@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://127.0.0.1:8000/user -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./stores_files/saved_resource"></script>
+    <link rel="stylesheet" href="./stores_files/home.css">
+    <link rel="stylesheet" href="./stores_files/bootstrap-icons.css">
+    <meta name="csrf-token" content="BkhfHLFG6Y94LMyA1DEoY6aAtkh64P4PsL90I8iE">
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .container {
+                width: 80%;
+                /* margin: 0 auto; */
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media (max-width: 991px) {
+                .container {
+                    width: 90%;
+                }
+            }
+            @media (max-width: 779px) {
+                .container {
+                    width: 100%;
+                }
+            }
+        }
+    </style>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            z-index: 1;
+        }
+
+        .show {
+            display: block;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .show a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 8px 0;
+        }
+
+        .show a:hover {
+            background-color: #ddd;
+        }
+    </style>
+
+    <script src="./stores_files/saved_resource"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./stores_files/all.min.css" integrity="sha384-j0S7G7jBGAfz8IjupFvsZxDBB738FJaioo/AK8C/xD4z4U4M4b8v1d8f6xrDf6p/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stores_files/sweetalert2.min.css" id="theme-styles">
+    <script src="./stores_files/sweetalert.min.js.download" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./stores_files/bootstrap-icons(1).css">
+    <script src="./stores_files/home.js.download"></script>
+
+<style>/* ! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.fixed{position:fixed}.relative{position:relative}.bottom-4{bottom:1rem}.right-4{right:1rem}.z-10{z-index:10}.z-50{z-index:50}.mx-3{margin-left:0.75rem;margin-right:0.75rem}.mx-auto{margin-left:auto;margin-right:auto}.mr-2{margin-right:0.5rem}.mr-6{margin-right:1.5rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.-mr-1{margin-right:-0.25rem}.mb-2{margin-bottom:0.5rem}.ml-2{margin-left:0.5rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.hidden{display:none}.h-8{height:2rem}.h-4{height:1rem}.w-44{width:11rem}.w-60{width:15rem}.w-8{width:2rem}.w-full{width:100%}.w-4{width:1rem}.w-80{width:20rem}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-gray-100 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(243 244 246 / var(--tw-divide-opacity))}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.bg-red-800{--tw-bg-opacity:1;background-color:rgb(153 27 27 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-medium{font-weight:500}.font-bold{font-weight:700}.tracking-tight{letter-spacing:-0.025em}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.container {
+                width: 80%;
+                /* margin: 0 auto; */
+                margin-left: auto;
+                margin-right: auto;
+            }@media (max-width: 991px) {
+                .container {
+                    width: 90%;
+                }
+            }@media (max-width: 779px) {
+                .container {
+                    width: 100%;
+                }
+            }
+        .hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}
+        .focus\:border-gray-400:focus{--tw-border-opacity:1;border-color:rgb(156 163 175 / var(--tw-border-opacity))}
+        .focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}
+        .focus\:ring-4:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}
+        .focus\:ring-gray-300:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(209 213 219 / var(--tw-ring-opacity))}
+        .focus\:ring-blue-300:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(147 197 253 / var(--tw-ring-opacity))}
+        @media (prefers-color-scheme: dark){.dark\:divide-gray-600 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(75 85 99 / var(--tw-divide-opacity))}.dark\:border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81 / var(--tw-border-opacity))}.dark\:bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81 / var(--tw-bg-opacity))}.dark\:bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.dark\:text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity))}.dark\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:hover\:bg-gray-600:hover{--tw-bg-opacity:1;background-color:rgb(75 85 99 / var(--tw-bg-opacity))}.dark\:hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:focus\:ring-gray-600:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(75 85 99 / var(--tw-ring-opacity))}.dark\:focus\:ring-blue-800:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(30 64 175 / var(--tw-ring-opacity))}}
+        @media (min-width: 768px){.md\:mr-0{margin-right:0px}.md\:hidden{display:none}}
+        @media (min-width: 1024px){.lg\:mx-0{margin-left:0px;margin-right:0px}}
+    </style><style>/* ! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.fixed{position:fixed}.relative{position:relative}.bottom-4{bottom:1rem}.right-4{right:1rem}.z-10{z-index:10}.z-50{z-index:50}.mx-3{margin-left:0.75rem;margin-right:0.75rem}.mx-auto{margin-left:auto;margin-right:auto}.mr-2{margin-right:0.5rem}.mr-6{margin-right:1.5rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.-mr-1{margin-right:-0.25rem}.mb-2{margin-bottom:0.5rem}.ml-2{margin-left:0.5rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.hidden{display:none}.h-8{height:2rem}.h-4{height:1rem}.w-44{width:11rem}.w-60{width:15rem}.w-8{width:2rem}.w-full{width:100%}.w-4{width:1rem}.w-80{width:20rem}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-gray-100 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(243 244 246 / var(--tw-divide-opacity))}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.bg-red-800{--tw-bg-opacity:1;background-color:rgb(153 27 27 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-medium{font-weight:500}.font-bold{font-weight:700}.tracking-tight{letter-spacing:-0.025em}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.container {
+                width: 80%;
+                /* margin: 0 auto; */
+                margin-left: auto;
+                margin-right: auto;
+            }@media (max-width: 991px) {
+                .container {
+                    width: 90%;
+                }
+            }@media (max-width: 779px) {
+                .container {
+                    width: 100%;
+                }
+            }
+        .hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}
+        .focus\:border-gray-400:focus{--tw-border-opacity:1;border-color:rgb(156 163 175 / var(--tw-border-opacity))}
+        .focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}
+        .focus\:ring-4:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}
+        .focus\:ring-gray-300:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(209 213 219 / var(--tw-ring-opacity))}
+        .focus\:ring-blue-300:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(147 197 253 / var(--tw-ring-opacity))}
+        @media (prefers-color-scheme: dark){.dark\:divide-gray-600 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(75 85 99 / var(--tw-divide-opacity))}.dark\:border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81 / var(--tw-border-opacity))}.dark\:bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81 / var(--tw-bg-opacity))}.dark\:bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.dark\:text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity))}.dark\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:hover\:bg-gray-600:hover{--tw-bg-opacity:1;background-color:rgb(75 85 99 / var(--tw-bg-opacity))}.dark\:hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:focus\:ring-gray-600:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(75 85 99 / var(--tw-ring-opacity))}.dark\:focus\:ring-blue-800:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(30 64 175 / var(--tw-ring-opacity))}}
+        @media (min-width: 768px){.md\:mr-0{margin-right:0px}.md\:hidden{display:none}}
+        @media (min-width: 1024px){.lg\:mx-0{margin-left:0px;margin-right:0px}}
+    </style><style>@font-face {
+              font-family: 'Open Sans Regular';
+              font-style: normal;
+              font-weight: 400;
+              src: url('chrome-extension://gkkdmjjodidppndkbkhhknakbeflbomf/fonts/open_sans/open-sans-v18-latin-regular.woff');
+          }</style><style>@font-face {
+              font-family: 'Open Sans Bold';
+              font-style: normal;
+              font-weight: 800;
+              src: url('chrome-extension://gkkdmjjodidppndkbkhhknakbeflbomf/fonts/open_sans/open-sans-v18-latin-800.woff');
+          }</style></head>
+
+<body><!-- hide login and register if user is logged in -->
+<style>
+    .shodow__{
+        box-shadow: 0px 10px 17px 0px rgba(69,62,62,0.21);
+        /* -webkit-box-shadow: 0px 10px 17px 0px rgba(69,62,62,0.51);
+        -moz-box-shadow: 0px 10px 17px 0px rgba(69,62,62,0.51); */
+    }
+</style>
+
+<nav class="bg-white shodow__">
+    <div class=" mx-auto container ">
+        <div class="nav__app">
+            <div class="f__logo">
+                <a class="flex justify-center items-center" href="http://127.0.0.1:8000/">
+                <div class="logo">
+                    <img src="./stores_files/index-logo.png" alt="">
+                </div>
+                <p>My Time</p>
+                </a>
+            </div>
+            <div class="flex justify-between items-center">
+                <ul class="flex justify-between items-center">
+                    <li class="mr-6">
+                        <a href="http://127.0.0.1:8000/orders">
+                            orders
+                        </a>
+                    </li>
+                    <li class="mr-2">
+                        <a href="http://127.0.0.1:8000/user">
+                            stores
+                        </a>
+                    </li>
+                </ul>
+
+                                    <div class="icons d-flex align-center">
+
+                        <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" class="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" type="button">
+                            <span class="sr-only">Open user menu</span>
+                            <img class="w-8 h-8 rounded-full" src="./stores_files/avatar.png" alt="user photo">
+                        </button>
+
+                        <!-- Dropdown menu -->
+                        <div id="dropdownAvatar" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(1198px, 46px);" data-popper-placement="bottom">
+                            <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                                <div>
+                                    <!-- logged in admin -->
+                                    user
+                                </div>
+                                <div class="font-medium truncate">anovicsoso@gmail.com</div>
+                            </div>
+                            <ul style="display: block" class="py-2 text-sm text-gray-700 dark:text-gray-200 block" aria-labelledby="dropdownUserAvatarButton">
+                                <li>
+                                    <a href="http://127.0.0.1:8000/profile/edit" class="block py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit Profile</a>
+                                </li>
+                                <li>
+                                    <a href="http://127.0.0.1:8000/profile/password" class="block  py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit Password</a>
+                                </li>
+                            </ul>
+                            <div class="py-2">
+                                <a href="http://127.0.0.1:8000/logout" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                            </div>
+                        </div>
+
+                    </div>
+                            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+<!-- <a href="http://127.0.0.1:8000">Home</a>. -->
+
+    <div>
+        <!-- slot -->
+        <style>
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 9999;
+        }
+        .spinner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            margin: -25px 0 0 -25px;
+            border: 5px solid #ccc;
+            border-top-color: #333;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .show--js{
+                display: none;
+            }
+        }
+        @media (min-width: 768px) {
+            .media__{
+                display: block;
+                position: relative;
+            }
+        }
+
+        .media__{
+            display: block ;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 999;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .color_{
+            background-color: #7cbda0;
+            color: #fff;
+        }
+        .color_:hover{
+            background-color: #92a98f;
+            color: #fff;}
+
+        .s-color{
+            background-color: #92a98f;
+            color: #fff;
+        }
+        .s-color:hover{
+            background-color: #7cbda0;
+            color: #000;
+        }
+        .light-color{
+            background-color: #7cbda0;
+            color: #000;
+        }
+
+
+    </style>
+    
+
+    <div id="loader" class="loader hidden">
+        <div class="spinner"></div>
+    </div>
+    <div class="flex">
+        <button id="toggleSidebarMobile" class="fixed bottom-4 right-4 z-50 bg-red-800 text-white p-2 rounded-full shadow-md block md:hidden">
+            <i class="bi bi-layout-text-sidebar-reverse"></i>
+        </button>
+        <div style="min-height: 100vh" class="sidebar shadow-md show--js z-10 relative w-60 p-4 bg-black">
+
+            <div class="content--js">
+                <div class="mt-12">
+                    <select class="city_input tomselected ts-hidden-accessible" id="select-beast" placeholder="Select a city..." autocomplete="off" tabindex="-1">
+                        <option selected="" disabled="" value="">Select a city...</option>
+                                                    <option value="1">Aïn Harrouda</option>
+                                                    <option value="2">Ben Yakhlef</option>
+                                                    <option value="3">Bouskoura</option>
+                                                    <option value="4">Casablanca</option>
+                                                    <option value="5">Médiouna</option>
+                                                    <option value="6">Mohammadia</option>
+                                                    <option value="7">Tit Mellil</option>
+                                                    <option value="8">Ben Yakhlef</option>
+                                                    <option value="9">Bejaâd</option>
+                                                    <option value="10">Ben Ahmed</option>
+                                                    <option value="11">Benslimane</option>
+                                                    <option value="12">Berrechid</option>
+                                                    <option value="13">Boujniba</option>
+                                                    <option value="14">Boulanouare</option>
+                                                    <option value="15">Bouznika</option>
+                                                    <option value="16">Deroua</option>
+                                                    <option value="17">El Borouj</option>
+                                                    <option value="18">El Gara</option>
+                                                    <option value="19">Guisser</option>
+                                                    <option value="20">Hattane</option>
+                                                    <option value="21">Khouribga</option>
+                                                    <option value="22">Loulad</option>
+                                                    <option value="23">Oued Zem</option>
+                                                    <option value="24">Oulad Abbou</option>
+                                                    <option value="25">Oulad H'Riz Sahel</option>
+                                                    <option value="26">Oulad M'rah</option>
+                                                    <option value="27">Oulad Saïd</option>
+                                                    <option value="28">Oulad Sidi Ben Daoud</option>
+                                                    <option value="29">Ras El Aïn</option>
+                                                    <option value="30">Settat</option>
+                                                    <option value="31">Sidi Rahhal Chataï</option>
+                                                    <option value="32">Soualem</option>
+                                                    <option value="33">Azemmour</option>
+                                                    <option value="34">Bir Jdid</option>
+                                                    <option value="35">Bouguedra</option>
+                                                    <option value="36">Echemmaia</option>
+                                                    <option value="37">El Jadida</option>
+                                                    <option value="38">Hrara</option>
+                                                    <option value="39">Ighoud</option>
+                                                    <option value="40">Jamâat Shaim</option>
+                                                    <option value="41">Jorf Lasfar</option>
+                                                    <option value="42">Khemis Zemamra</option>
+                                                    <option value="43">Laaounate</option>
+                                                    <option value="44">Moulay Abdallah</option>
+                                                    <option value="45">Oualidia</option>
+                                                    <option value="46">Oulad Amrane</option>
+                                                    <option value="47">Oulad Frej</option>
+                                                    <option value="48">Oulad Ghadbane</option>
+                                                    <option value="49">Safi</option>
+                                                    <option value="50">Sebt El Maârif</option>
+                                                    <option value="51">Sebt Gzoula</option>
+                                                    <option value="52">Sidi Ahmed</option>
+                                                    <option value="53">Sidi Ali Ban Hamdouche</option>
+                                                    <option value="54">Sidi Bennour</option>
+                                                    <option value="55">Sidi Bouzid</option>
+                                                    <option value="56">Sidi Smaïl</option>
+                                                    <option value="57">Youssoufia</option>
+                                                    <option value="58">Fès</option>
+                                                    <option value="59">Aïn Cheggag</option>
+                                                    <option value="60">Bhalil</option>
+                                                    <option value="61">Boulemane</option>
+                                                    <option value="62">El Menzel</option>
+                                                    <option value="63">Guigou</option>
+                                                    <option value="64">Imouzzer Kandar</option>
+                                                    <option value="65">Imouzzer Marmoucha</option>
+                                                    <option value="66">Missour</option>
+                                                    <option value="67">Moulay Yaâcoub</option>
+                                                    <option value="68">Ouled Tayeb</option>
+                                                    <option value="69">Outat El Haj</option>
+                                                    <option value="70">Ribate El Kheir</option>
+                                                    <option value="71">Séfrou</option>
+                                                    <option value="72">Skhinate</option>
+                                                    <option value="73">Tafajight</option>
+                                                    <option value="74">Arbaoua</option>
+                                                    <option value="75">Aïn Dorij</option>
+                                                    <option value="76">Dar Gueddari</option>
+                                                    <option value="77">Had Kourt</option>
+                                                    <option value="78">Jorf El Melha</option>
+                                                    <option value="79">Kénitra</option>
+                                                    <option value="80">Khenichet</option>
+                                                    <option value="81">Lalla Mimouna</option>
+                                                    <option value="82">Mechra Bel Ksiri</option>
+                                                    <option value="83">Mehdia</option>
+                                                    <option value="84">Moulay Bousselham</option>
+                                                    <option value="85">Sidi Allal Tazi</option>
+                                                    <option value="86">Sidi Kacem</option>
+                                                    <option value="87">Sidi Slimane</option>
+                                                    <option value="88">Sidi Taibi</option>
+                                                    <option value="89">Sidi Yahya El Gharb</option>
+                                                    <option value="90">Souk El Arbaa</option>
+                                                    <option value="91">Akka</option>
+                                                    <option value="92">Assa</option>
+                                                    <option value="93">Bouizakarne</option>
+                                                    <option value="94">El Ouatia</option>
+                                                    <option value="95">Es-Semara</option>
+                                                    <option value="96">Fam El Hisn</option>
+                                                    <option value="97">Foum Zguid</option>
+                                                    <option value="98">Guelmim</option>
+                                                    <option value="99">Taghjijt</option>
+                                                    <option value="100">Tan-Tan</option>
+                                                    <option value="101">Tata</option>
+                                                    <option value="102">Zag</option>
+                                                    <option value="103">Marrakech</option>
+                                                    <option value="104">Ait Daoud</option>
+                                                    <option value="105">Amizmiz</option>
+                                                    <option value="106">Assahrij</option>
+                                                    <option value="107">Aït Ourir</option>
+                                                    <option value="108">Ben Guerir</option>
+                                                    <option value="109">Chichaoua</option>
+                                                    <option value="110">El Hanchane</option>
+                                                    <option value="111">El Kelaâ des Sraghna</option>
+                                                    <option value="112">Essaouira</option>
+                                                    <option value="113">Fraïta</option>
+                                                    <option value="114">Ghmate</option>
+                                                    <option value="115">Ighounane</option>
+                                                    <option value="116">Imintanoute</option>
+                                                    <option value="117">Kattara</option>
+                                                    <option value="118">Lalla Takerkoust</option>
+                                                    <option value="119">Loudaya</option>
+                                                    <option value="120">Lâattaouia</option>
+                                                    <option value="121">Moulay Brahim</option>
+                                                    <option value="122">Mzouda</option>
+                                                    <option value="123">Ounagha</option>
+                                                    <option value="124">Sid L'Mokhtar</option>
+                                                    <option value="125">Sid Zouin</option>
+                                                    <option value="126">Sidi Abdallah Ghiat</option>
+                                                    <option value="127">Sidi Bou Othmane</option>
+                                                    <option value="128">Sidi Rahhal</option>
+                                                    <option value="129">Skhour Rehamna</option>
+                                                    <option value="130">Smimou</option>
+                                                    <option value="131">Tafetachte</option>
+                                                    <option value="132">Tahannaout</option>
+                                                    <option value="133">Talmest</option>
+                                                    <option value="134">Tamallalt</option>
+                                                    <option value="135">Tamanar</option>
+                                                    <option value="136">Tamansourt</option>
+                                                    <option value="137">Tameslouht</option>
+                                                    <option value="138">Tanalt</option>
+                                                    <option value="139">Zeubelemok</option>
+                                                    <option value="140">Meknès</option>
+                                                    <option value="141">Khénifra</option>
+                                                    <option value="142">Agourai</option>
+                                                    <option value="143">Ain Taoujdate</option>
+                                                    <option value="144">MyAliCherif</option>
+                                                    <option value="145">Rissani</option>
+                                                    <option value="146">Amalou Ighriben</option>
+                                                    <option value="147">Aoufous</option>
+                                                    <option value="148">Arfoud</option>
+                                                    <option value="149">Azrou</option>
+                                                    <option value="150">Aïn Jemaa</option>
+                                                    <option value="151">Aïn Karma</option>
+                                                    <option value="152">Aïn Leuh</option>
+                                                    <option value="153">Aït Boubidmane</option>
+                                                    <option value="154">Aït Ishaq</option>
+                                                    <option value="155">Boudnib</option>
+                                                    <option value="156">Boufakrane</option>
+                                                    <option value="157">Boumia</option>
+                                                    <option value="158">El Hajeb</option>
+                                                    <option value="159">Elkbab</option>
+                                                    <option value="160">Er-Rich</option>
+                                                    <option value="161">Errachidia</option>
+                                                    <option value="162">Gardmit</option>
+                                                    <option value="163">Goulmima</option>
+                                                    <option value="164">Gourrama</option>
+                                                    <option value="165">Had Bouhssoussen</option>
+                                                    <option value="166">Haj Kaddour</option>
+                                                    <option value="167">Ifrane</option>
+                                                    <option value="168">Itzer</option>
+                                                    <option value="169">Jorf</option>
+                                                    <option value="170">Kehf Nsour</option>
+                                                    <option value="171">Kerrouchen</option>
+                                                    <option value="172">M'haya</option>
+                                                    <option value="173">M'rirt</option>
+                                                    <option value="174">Midelt</option>
+                                                    <option value="175">Moulay Ali Cherif</option>
+                                                    <option value="176">Moulay Bouazza</option>
+                                                    <option value="177">Moulay Idriss Zerhoun</option>
+                                                    <option value="178">Moussaoua</option>
+                                                    <option value="179">N'Zalat Bni Amar</option>
+                                                    <option value="180">Ouaoumana</option>
+                                                    <option value="181">Oued Ifrane</option>
+                                                    <option value="182">Sabaa Aiyoun</option>
+                                                    <option value="183">Sebt Jahjouh</option>
+                                                    <option value="184">Sidi Addi</option>
+                                                    <option value="185">Tichoute</option>
+                                                    <option value="186">Tighassaline</option>
+                                                    <option value="187">Tighza</option>
+                                                    <option value="188">Timahdite</option>
+                                                    <option value="189">Tinejdad</option>
+                                                    <option value="190">Tizguite</option>
+                                                    <option value="191">Toulal</option>
+                                                    <option value="192">Tounfite</option>
+                                                    <option value="193">Zaouia d'Ifrane</option>
+                                                    <option value="194">Zaïda</option>
+                                                    <option value="195">Ahfir</option>
+                                                    <option value="196">Aklim</option>
+                                                    <option value="197">Al Aroui</option>
+                                                    <option value="198">Aïn Bni Mathar</option>
+                                                    <option value="199">Aïn Erreggada</option>
+                                                    <option value="200">Ben Taïeb</option>
+                                                    <option value="201">Berkane</option>
+                                                    <option value="202">Bni Ansar</option>
+                                                    <option value="203">Bni Chiker</option>
+                                                    <option value="204">Bni Drar</option>
+                                                    <option value="205">Bni Tadjite</option>
+                                                    <option value="206">Bouanane</option>
+                                                    <option value="207">Bouarfa</option>
+                                                    <option value="208">Bouhdila</option>
+                                                    <option value="209">Dar El Kebdani</option>
+                                                    <option value="210">Debdou</option>
+                                                    <option value="211">Douar Kannine</option>
+                                                    <option value="212">Driouch</option>
+                                                    <option value="213">El Aïoun Sidi Mellouk</option>
+                                                    <option value="214">Farkhana</option>
+                                                    <option value="215">Figuig</option>
+                                                    <option value="216">Ihddaden</option>
+                                                    <option value="217">Jaâdar</option>
+                                                    <option value="218">Jerada</option>
+                                                    <option value="219">Kariat Arekmane</option>
+                                                    <option value="220">Kassita</option>
+                                                    <option value="221">Kerouna</option>
+                                                    <option value="222">Laâtamna</option>
+                                                    <option value="223">Madagh</option>
+                                                    <option value="224">Midar</option>
+                                                    <option value="225">Nador</option>
+                                                    <option value="226">Naima</option>
+                                                    <option value="227">Oued Heimer</option>
+                                                    <option value="228">Oujda</option>
+                                                    <option value="229">Ras El Ma</option>
+                                                    <option value="230">Saïdia</option>
+                                                    <option value="231">Selouane</option>
+                                                    <option value="232">Sidi Boubker</option>
+                                                    <option value="233">Sidi Slimane Echcharaa</option>
+                                                    <option value="234">Talsint</option>
+                                                    <option value="235">Taourirt</option>
+                                                    <option value="236">Tendrara</option>
+                                                    <option value="237">Tiztoutine</option>
+                                                    <option value="238">Touima</option>
+                                                    <option value="239">Touissit</option>
+                                                    <option value="240">Zaïo</option>
+                                                    <option value="241">Zeghanghane</option>
+                                                    <option value="242">Rabat</option>
+                                                    <option value="243">Salé</option>
+                                                    <option value="244">Ain El Aouda</option>
+                                                    <option value="245">Harhoura</option>
+                                                    <option value="246">Khémisset</option>
+                                                    <option value="247">Oulmès</option>
+                                                    <option value="248">Rommani</option>
+                                                    <option value="249">Sidi Allal El Bahraoui</option>
+                                                    <option value="250">Sidi Bouknadel</option>
+                                                    <option value="251">Skhirate</option>
+                                                    <option value="252">Tamesna</option>
+                                                    <option value="253">Témara</option>
+                                                    <option value="254">Tiddas</option>
+                                                    <option value="255">Tiflet</option>
+                                                    <option value="256">Touarga</option>
+                                                    <option value="257">Agadir</option>
+                                                    <option value="258">Agdz</option>
+                                                    <option value="259">Agni Izimmer</option>
+                                                    <option value="260">Aït Melloul</option>
+                                                    <option value="261">Alnif</option>
+                                                    <option value="262">Anzi</option>
+                                                    <option value="263">Aoulouz</option>
+                                                    <option value="264">Aourir</option>
+                                                    <option value="265">Arazane</option>
+                                                    <option value="266">Aït Baha</option>
+                                                    <option value="267">Aït Iaâza</option>
+                                                    <option value="268">Aït Yalla</option>
+                                                    <option value="269">Ben Sergao</option>
+                                                    <option value="270">Biougra</option>
+                                                    <option value="271">Boumalne-Dadès</option>
+                                                    <option value="272">Dcheira El Jihadia</option>
+                                                    <option value="273">Drargua</option>
+                                                    <option value="274">El Guerdane</option>
+                                                    <option value="275">Harte Lyamine</option>
+                                                    <option value="276">Ida Ougnidif</option>
+                                                    <option value="277">Ifri</option>
+                                                    <option value="278">Igdamen</option>
+                                                    <option value="279">Ighil n'Oumgoun</option>
+                                                    <option value="280">Imassine</option>
+                                                    <option value="281">Inezgane</option>
+                                                    <option value="282">Irherm</option>
+                                                    <option value="283">Kelaat-M'Gouna</option>
+                                                    <option value="284">Lakhsas</option>
+                                                    <option value="285">Lakhsass</option>
+                                                    <option value="286">Lqliâa</option>
+                                                    <option value="287">M'semrir</option>
+                                                    <option value="288">Massa (Maroc)</option>
+                                                    <option value="289">Megousse</option>
+                                                    <option value="290">Ouarzazate</option>
+                                                    <option value="291">Oulad Berhil</option>
+                                                    <option value="292">Oulad Teïma</option>
+                                                    <option value="293">Sarghine</option>
+                                                    <option value="294">Sidi Ifni</option>
+                                                    <option value="295">Skoura</option>
+                                                    <option value="296">Tabounte</option>
+                                                    <option value="297">Tafraout</option>
+                                                    <option value="298">Taghzout</option>
+                                                    <option value="299">Tagzen</option>
+                                                    <option value="300">Taliouine</option>
+                                                    <option value="301">Tamegroute</option>
+                                                    <option value="302">Tamraght</option>
+                                                    <option value="303">Tanoumrite Nkob Zagora</option>
+                                                    <option value="304">Taourirt ait zaghar</option>
+                                                    <option value="305">Taroudannt</option>
+                                                    <option value="306">Temsia</option>
+                                                    <option value="307">Tifnit</option>
+                                                    <option value="308">Tisgdal</option>
+                                                    <option value="309">Tiznit</option>
+                                                    <option value="310">Toundoute</option>
+                                                    <option value="311">Zagora</option>
+                                                    <option value="312">Afourar</option>
+                                                    <option value="313">Aghbala</option>
+                                                    <option value="314">Azilal</option>
+                                                    <option value="315">Aït Majden</option>
+                                                    <option value="316">Beni Ayat</option>
+                                                    <option value="317">Béni Mellal</option>
+                                                    <option value="318">Bin elouidane</option>
+                                                    <option value="319">Bradia</option>
+                                                    <option value="320">Bzou</option>
+                                                    <option value="321">Dar Oulad Zidouh</option>
+                                                    <option value="322">Demnate</option>
+                                                    <option value="323">Dra'a</option>
+                                                    <option value="324">El Ksiba</option>
+                                                    <option value="325">Foum Jamaa</option>
+                                                    <option value="326">Fquih Ben Salah</option>
+                                                    <option value="327">Kasba Tadla</option>
+                                                    <option value="328">Ouaouizeght</option>
+                                                    <option value="329">Oulad Ayad</option>
+                                                    <option value="330">Oulad M'Barek</option>
+                                                    <option value="331">Oulad Yaich</option>
+                                                    <option value="332">Sidi Jaber</option>
+                                                    <option value="333">Souk Sebt Oulad Nemma</option>
+                                                    <option value="334">Zaouïat Cheikh</option>
+                                                    <option value="335">Tanger</option>
+                                                    <option value="336">Tétouan</option>
+                                                    <option value="337">Akchour</option>
+                                                    <option value="338">Assilah</option>
+                                                    <option value="339">Bab Berred</option>
+                                                    <option value="340">Bab Taza</option>
+                                                    <option value="341">Brikcha</option>
+                                                    <option value="342">Chefchaouen</option>
+                                                    <option value="343">Dar Bni Karrich</option>
+                                                    <option value="344">Dar Chaoui</option>
+                                                    <option value="345">Fnideq</option>
+                                                    <option value="346">Gueznaia</option>
+                                                    <option value="347">Jebha</option>
+                                                    <option value="348">Karia</option>
+                                                    <option value="349">Khémis Sahel</option>
+                                                    <option value="350">Ksar El Kébir</option>
+                                                    <option value="351">Larache</option>
+                                                    <option value="352">M'diq</option>
+                                                    <option value="353">Martil</option>
+                                                    <option value="354">Moqrisset</option>
+                                                    <option value="355">Oued Laou</option>
+                                                    <option value="356">Oued Rmel</option>
+                                                    <option value="357">Ouazzane</option>
+                                                    <option value="358">Point Cires</option>
+                                                    <option value="359">Sidi Lyamani</option>
+                                                    <option value="360">Sidi Mohamed ben Abdallah el-Raisuni</option>
+                                                    <option value="361">Zinat</option>
+                                                    <option value="362">Ajdir</option>
+                                                    <option value="363">Aknoul</option>
+                                                    <option value="364">Al Hoceïma</option>
+                                                    <option value="365">Aït Hichem</option>
+                                                    <option value="366">Bni Bouayach</option>
+                                                    <option value="367">Bni Hadifa</option>
+                                                    <option value="368">Ghafsai</option>
+                                                    <option value="369">Guercif</option>
+                                                    <option value="370">Imzouren</option>
+                                                    <option value="371">Inahnahen</option>
+                                                    <option value="372">Issaguen (Ketama)</option>
+                                                    <option value="373">Karia (El Jadida)</option>
+                                                    <option value="374">Karia Ba Mohamed</option>
+                                                    <option value="375">Oued Amlil</option>
+                                                    <option value="376">Oulad Zbair</option>
+                                                    <option value="377">Tahla</option>
+                                                    <option value="378">Tala Tazegwaght</option>
+                                                    <option value="379">Tamassint</option>
+                                                    <option value="380">Taounate</option>
+                                                    <option value="381">Targuist</option>
+                                                    <option value="382">Taza</option>
+                                                    <option value="383">Taïnaste</option>
+                                                    <option value="384">Thar Es-Souk</option>
+                                                    <option value="385">Tissa</option>
+                                                    <option value="386">Tizi Ouasli</option>
+                                                    <option value="387">Laayoune</option>
+                                                    <option value="388">El Marsa</option>
+                                                    <option value="389">Tarfaya</option>
+                                                    <option value="390">Boujdour</option>
+                                                    <option value="391">Awsard</option>
+                                                    <option value="392">Oued-Eddahab</option>
+                                                    <option value="393">Stehat</option>
+                                                    <option value="394">Aït Attab</option>
+                                            </select><div class="ts-wrapper city_input single"><div class="ts-control"><input type="select-one" autocomplete="off" size="1" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="select-beast-ts-dropdown" id="select-beast-ts-control" placeholder="Select a city..."></div><div class="ts-dropdown single" style="display: none;"><div role="listbox" tabindex="-1" class="ts-dropdown-content" id="select-beast-ts-dropdown"></div></div></div>
+
+                    <button class="light-color rounded py-1 px-3 mt-2 search-btn">
+                        Filter
+                    </button>
+                </div>
+            </div>
+            <div class="mt-12">
+                <input type="search" placeholder="Search for a store" id="search_input_store" class="w-full border border-gray-300 rounded px-3 py-1  focus:outline-none focus:border-gray-400 text-xs">
+            </div>
+
+        </div>
+
+
+        <div style="" class="bg-gray-100 py-2 px-4 make-w-full w-full">
+            <div class="flex justify-between">
+                <div>
+                    <h1 class="text-2xl  text-gray-700 dark:text-gray-200">Stores</h1>
+                </div>
+                <div>
+                    <a href="http://127.0.0.1:8000/store/create">
+                        <button class="s-color rounded px-3 py-2 w-full text-md shadow-2xl">Apply to have a store</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div id="stores" class="flex flex-wrap gap-4 px-2 py-4">
+            <div class="w-80 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto lg:mx-0">
+                <a href="http://127.0.0.1:8000/user#">
+                    <div style="background-size: cover; background-position: center; background-image: url(&#39;img/store/128483776.jpg&#39;); height: 250px; width: 100%; background-repeat: no-repeat;"></div>
+                </a>
+                <div class="p-5">
+                    <a href="http://127.0.0.1:8000/user#">
+                        <h5 class="mb-2 store-title text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            Store 1
+                        </h5>
+                    </a>
+                    
+                    <a href="http://127.0.0.1:8000/store/1/details" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white light-color  rounded-lg hover: focus:ring-4 focus:outline-none focus:ring-blue-300 dark: dark:hover: dark:focus:ring-blue-800">
+                            Products
+                            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </a>
+                </div>
+            </div></div>
+        </div>
+    </div>
+    </div>
+    <script src="./stores_files/jquery-3.6.4.js.download" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="./stores_files/flowbite.min.js.download"></script>
+
+    <script>
+
+    </script>
+
+
+
+<script src="./stores_files/alpinejs" defer=""></script>
+<script src="./stores_files/alpine.min.js.download" defer=""></script>
+<link href="./stores_files/tom-select.css" rel="stylesheet">
+<script src="./stores_files/tom-select.complete.min.js.download"></script>
+
+<script src="./stores_files/jquery.min.js.download"></script>
+<script>
+    new TomSelect("#select-beast",{
+        create: true,
+        sortField: {
+            field: "text",
+            direction: "asc"
+        }
+    });
+
+    function getAllStores(){
+        $(document).ready(function() {
+            const loader = $('#loader');
+
+            // Trigger the AJAX request (e.g., on a button click, page load, or any other event)
+            loader.removeClass('hidden'); // Show the loader
+            $.ajax({
+                type: "GET",
+                url: "http://127.0.0.1:8000/store",
+                dataType: "json",
+                success: function(response) {
+                    // console.log(response);
+                    loader.addClass('hidden'); // Hide the loader
+                    displayStores(response);
+                },
+                error: function() {
+                    loader.addClass('hidden'); // Hide the loader
+                    console.error('Error fetching data');
+                }
+            });
+        });
+    }
+
+    getAllStores();
+
+
+    function displayStores(data) {
+        const stores = data.stores;
+        const storesDiv = $('#stores');
+        storesDiv.empty();
+        if(stores.length == 0) {
+            const storesDiv = $('#stores');
+            storesDiv.append('<h3>No stores found</h3>');
+            return;
+        }
+        stores.forEach(store => {
+            const storeDiv = `
+            <div class="w-80 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto lg:mx-0">
+                <a href="#">
+                    <div
+                    style="background-size: cover; background-position: center; background-image: url('img/store/${store.image}'); height: 250px; width: 100%; background-repeat: no-repeat;"
+                    ></div>
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 store-title text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            ${store.title}
+                        </h5>
+                    </a>
+                    
+                    <a href="store/${store.id}/details" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white light-color  rounded-lg hover: focus:ring-4 focus:outline-none focus:ring-blue-300 dark: dark:hover: dark:focus:ring-blue-800">
+                            Products
+                            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </a>
+                </div>
+            `
+            storesDiv.append(storeDiv);
+        });
+    }
+
+    $(document).ready(function() {
+        const loader = $('#loader');
+        $('.search-btn').click(function() {
+            const city = $('.city_input').val();
+            console.log(city);
+            if (!city) {
+                getAllStores();
+                const sidebar = $('.sidebar');
+                sidebar.removeClass('media__');
+                return;
+            }
+            loader.removeClass('hidden'); // Show the loader
+            $.ajax({
+                type: "GET",
+                url: "/store/city/"+city,
+                dataType: "json",
+                success: function(response) {
+                    // console.log(response);
+                    const sidebar = $('.sidebar');
+                sidebar.removeClass('media__');
+                    loader.addClass('hidden'); // Hide the loader
+                    displayStores(response);
+                },
+                error: function() {
+                    loader.addClass('hidden'); // Hide the loader
+                    console.error('Error fetching data');
+                }
+            });
+        });
+    });
+
+    $(document).ready(function() {
+        const toggleBtn = $('#toggleSidebarMobile');
+        toggleBtn.click(function() {
+            const sidebar = $('.sidebar');
+            sidebar.toggleClass('media__');
+        });
+
+
+    });
+
+    $(document).ready(function() {
+    // Define the media query
+        const mediaQuery = window.matchMedia("(max-width: 767px)");
+
+        // Run the function once on page load
+        checkScreenSize(mediaQuery);
+
+        // Add an event listener to listen for changes in screen size
+        mediaQuery.addListener(checkScreenSize);
+
+        function checkScreenSize(e) {
+            if (e.matches) {
+                console.log('mobile');
+            } else {
+                //remove the class
+                const sidebar = $('.sidebar');
+                sidebar.removeClass('media__');
+                console.log('desktop');
+            }
+        }
+    });
+
+    // style="background-size: cover; background-position: center; background-image: url('img/store/${store.image}'); height: 250px; width: 100%; background-repeat: no-repeat;"
+    $(document).ready(function(){
+        $('#search_input_store').on('keyup', function(){
+            var value = $(this).val();
+            // console.log(value);
+            // display none all the stores that don't match the class store-title in the heading
+            $('.store-title').each(function(){
+                if($(this).text().toLowerCase().indexOf(value.toLowerCase()) == -1){
+                    $(this).parent().parent().parent().hide();
+                } else {
+                    $(this).parent().parent().parent().show();
+                }
+            })
+        })
+    })
+</script>
+</body></html>
